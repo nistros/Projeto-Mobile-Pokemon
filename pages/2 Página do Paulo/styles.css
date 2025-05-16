@@ -1,0 +1,14 @@
+body {
+    background-image: "pages\2 Página do Paulo\imagens\manman.jpg";
+  }
+  
+  h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  p {
+    color: brown;
+    font-family: verdana;
+    font-size: 20px;
+  }
