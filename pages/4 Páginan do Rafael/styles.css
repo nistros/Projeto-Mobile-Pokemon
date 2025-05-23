@@ -1,7 +1,12 @@
 body {
 background-image: url("https://preview.redd.it/vtbk068l99lz.png?auto=webp&s=b2d5459e790d0127d32f0b1f1994ca6258b51e0a");
-background-position: center;
-height: 100;
-width: 200;
-size: 100;
+background-position: relative;
+size: "100%";
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 1px;
+  
+}
   }

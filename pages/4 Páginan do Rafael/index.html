@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POKEMON</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Navbar Pokémon</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        .navbar {
+            background-color: #e53935; /* Vermelho Pokémon */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: white !important;
+        }
+        
+        .nav-link {
+            color: rgba(255,255,255,0.85) !important;
+            transition: all 0.3s ease;
+            margin: 0 5px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: white !important;
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        /* Flexbox para distribuição uniforme */
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .nav-item {
+            flex: 1;
+            text-align: center;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .navbar-nav {
+                flex-direction: column;
+            }
+            
+            .nav-item {
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    POKEMON Peso
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PokéDex</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Altura dos Pokémons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Peso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vantagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tipo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
