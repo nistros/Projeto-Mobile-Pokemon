@@ -1,0 +1,19 @@
+body {
+    background-image: "assets\manman.jpg"
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  p {
+    color: rgb(180, 0, 0);
+    font-family: verdana;
+    font-size: 20px;
+  }
+  img{
+    width: 300px;
+    margin: 38px;
+    margin-top: -25px;
+  }
