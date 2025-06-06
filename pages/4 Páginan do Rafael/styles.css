@@ -1,12 +1,8 @@
 body {
-background-image: url("https://preview.redd.it/vtbk068l99lz.png?auto=webp&s=b2d5459e790d0127d32f0b1f1994ca6258b51e0a");
-background-position: relative;
-size: "100%";
-div {
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 1px;
-  
-}
+background-image: url('https://preview.redd.it/vtbk068l99lz.png?width=640&crop=smart&auto=webp&s=af542b12e284b195c5c3e5142e0b581c7b042341');
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+background-color: #4597eb;
+font-family:
   }
