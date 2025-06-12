@@ -6,8 +6,8 @@ img{
 }
 body {
     background-image: url('assets/znifk7fc.png');
-    background-position: absolute;
-    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh; /* Garante que o background ocupe toda a tela */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
