@@ -15,3 +15,12 @@ a{
         color: yellow !important;
         text-shadow: 3px 3px 5px rgb(0, 0, 255);
 }
+img{
+    width: 75px;
+}
+p{
+    color: rgb(234, 234, 234);
+}
+.Pikachu{
+    width: 100px;
+}
