@@ -2,12 +2,32 @@
 img{
     width: 320px;
     position: absolute;
-    margin-left: 30px;
+    margin-left: 40h;
 }
 body {
     background-image: url('assets/znifk7fc.png');
-    background-position: absolute;
-    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh; /* Garante que o background ocupe toda a tela */
+    background-position: relative;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+@font-face {
+    font-family: "Pokemon";
+    src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
+}
+a{
+    font-family: "Pokemon", sans-serif;
+    font-size: 40px;
+    color: yellow !important;
+    text-shadow: 3px 3px 5px rgb(0, 0, 255);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
 }
