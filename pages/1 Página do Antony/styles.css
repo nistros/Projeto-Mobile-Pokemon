@@ -1,16 +1,18 @@
 
 img{
     width: 320px;
-    position: absolute;
+    position: align-center;
     margin-left: 40h;
 }
 body {
-    background-image: url('assets/znifk7fc.png');
-    background-size: cover;
-    background-position: relative;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
+        background-image: url('assets/znifk7fc.png');
+        background-size: cover; /* Preenche o espaço sem distorcer */
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw; /* 100% da largura da tela */
+        height: 100vh; /* 100% da altura da tela */
+        overflow: hidden; 
+    }
 @font-face {
     font-family: "Pokemon";
     src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
@@ -27,7 +29,23 @@ a{
 }
 @media (max-width: 768px) {
     .navbar {
+        bottom: 0;
+        position: fixed;
         flex-direction: column;
         align-items: center;
-    }
+        height: 10vh;
+        width: 50vh;
+    }   
+}
+.navbar-collapse {
+    position: absolute;
+    width: 100%;
+    background-color: #343a40; /* Cor de fundo para evitar transparência */
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.navbar-collapse.show {
+    transform: translateY(1); 
 }
