@@ -3,58 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon - Navbar Responsiva</title>
-    <!-- Bootstrap CSS -->
+    <title>Pokémon - Peso dos Pokémon</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Espaço para a navbar não cobrir conteúdo */
         body {
-            padding-top: 56px; /* Espaço para navbar desktop */
-            padding-bottom: 60px; /* Espaço para navbar mobile */
-            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            padding-bottom: 80px; 
         }
-        
-        /* Estilo da navbar */
-        .pokemon-navbar {
-            background-color: #343a40 !important;
-            transition: all 0.3s ease;
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
         }
-        
-        /* Media Queries para responsividade */
-        @media (min-width: 992px) {
-            /* Desktop - Navbar no topo */
-            .pokemon-navbar {
-                position: fixed;
-                top: 0;
-                bottom: auto;
-            }
-            body {
-                padding-bottom: 0;
-            }
+        .header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 5px;
         }
-        
-        @media (max-width: 991.98px) {
-            /* Mobile - Navbar no rodapé */
-            .pokemon-navbar {
-                position: fixed;
-                bottom: 0;
-                top: auto;
-            }
-            body {
-                padding-top: 0;
-            }
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+        }
+        .weight-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .weight-item {
+            background-color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #444;
+            width: 120px;
         }
     </style>
 </head>
 <body>
-    <!-- Conteúdo principal -->
-    <div class="container mt-4">
-        <h1 class="text-center mb-4">Pokédex</h1>
-        <p>Conteúdo da página aqui...</p>
+    <link rel="stylesheet" href="styles.css">
+    <div class="header">
+        <h1>POKÉMON</h1>
+        <p>peso dos Pokémon</p>
     </div>
 
-    <!-- Navbar responsiva -->
-    <nav class="navbar navbar-expand-lg navbar-dark pokemon-navbar">
+
+    <div class="weight-list">
+        <div class="weight-item">6.0 Kg</div>
+        <div class="weight-item">90.5 Kg</div>
+        <div class="weight-item">40.5 Kg</div>
+        <div class="weight-item">54.1 Kg</div>
+        <div class="weight-item">40.0 Kg</div>
+        <div class="weight-item">155 Kg</div>
+        <div class="weight-item">52.0 Kg</div>
+        <div class="weight-item">27.0 Kg</div>
+        <div class="weight-item">6.9 Kg</div>
+        <div class="weight-item">48.4 Kg</div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
         <div class="container">
             <a class="navbar-brand" href="#">POKÉMON</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -73,7 +86,7 @@
         </div>
     </nav>
 
-    <!-- Bootstrap JS + Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <img src="../3 Página do Jorge/assets/" alt="">
 </body>
 </html>
