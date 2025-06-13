@@ -7,7 +7,7 @@ body {
 }
 @font-face {
     font-family: "Pokemon";
-    src: url(./assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
+    src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
 }
 a{
         font-family: "Pokemon", sans-serif;
@@ -20,6 +20,7 @@ img{
 }
 p{
     color: rgb(234, 234, 234);
+    align-items: center;
 }
 .Pikachu{
     width: 40px;
