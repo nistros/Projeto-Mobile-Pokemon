@@ -1,9 +1,10 @@
 body {
     background-image: url('assets/jorge.jpg');
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-position: unset ;
+    background-repeat: repeat;
+    text-align: center;
+    background-color: rgb(133, 72, 161);
 }
 @font-face {
     font-family: "Pokemon";
