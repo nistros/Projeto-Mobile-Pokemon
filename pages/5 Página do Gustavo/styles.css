@@ -1,11 +1,12 @@
 body {
     background-image: url(https://mrwallpaper.com/images/high/minimalist-dragonite-evolution-6omtl4v0h4nijn45.webp);
-background-position: relative;
-background-repeat: repeat-x;
+background-size: 255%;
+background-repeat: repeat;
+background-position: left;
 background-color: #97b3de;
 div {
-    padding: 10px;
-    padding-left: 10px;
+    padding: 0,5%;
+    padding-left: 0,5%;
 }
 
 }
