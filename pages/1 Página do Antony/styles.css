@@ -8,7 +8,7 @@ img {
 }
 
 body {
-        background-image: url('assets/znifk7fc.png');
+        background-color: rgba(250, 255, 151, 0.419);
         background-size: cover; /* Preenche o espaço sem distorcer */
         background-position: center;
         background-repeat: repeat;
@@ -23,11 +23,22 @@ body {
 a{
     font-family: "Pokemon", sans-serif;
     font-size: 40px;
-    color: yellow !important;
-    text-shadow: 3px 3px 5px rgb(0, 0, 255);
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 .navbar {
     display: flex;
     justify-content: space-between;
 }
+.roberto {
+    width: 380px;
+    height: auto;
+    text-align: center;
+    background-color: #888080;
+    padding: 100px;
+  }
 
+  .roberto img {
+    max-width: 100%;
+    height: auto;
+  }

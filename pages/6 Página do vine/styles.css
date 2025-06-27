@@ -1,41 +1,37 @@
 body {
-  background-image: url('./assets/iPhone\ 16\ -\ 7.png');
+  background-image: url('./assets/lucario 2.png');
+  background-size: cover; /* Preenche o espaço sem distorcer */
   background-position: center;
-  background-size: 550px;
   background-repeat: repeat;
-  background-color: black
-  ;
+  width: 100vw; /* 100% da largura da tela */
+  height: 100vh; /* 100% da altura da tela */
+  overflow: hidden; 
+  
+  
 }
 
 
 
 img {
   width: 500px;
-
-}
-h1{
-  color: #ffffff;
-  
-}
-
+ }
 .texto1{
-  font-family: "Pokemon", sans-serif;
+  font-family:"cursive";
   font-size: 40px;
   color: rgb(0, 26, 255) !important;
   text-shadow: 3px 3px 5px rgb(0, 0, 255);
 
 }
-h2{color: #ffffff;
-  font-size: 15px;
+
   
 
-}
+
 @font-face {
-  font-family: "Pokemon";
-  src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
+  font-family: "cursive";
+  src: url format("truetype");
 }
 a{
-      font-family: "Pokemon", sans-serif;
+      font-family:"cursive";
       font-size: 40px;
       color: yellow !important;
       text-shadow: 3px 3px 5px rgb(0, 0, 255);
@@ -43,76 +39,63 @@ a{
 
 
 
-h3 {
-  font-size: 20px;
-  color: #ffffff;
-  font-family: verdana;
-}
+
 
 
 .texto2 {
-  font-family: "Pokemon", sans-serif;
+  font-family:"cursive";
       font-size: 40px;
       color: rgb(255, 128, 0) !important;
-      text-shadow: 3px 3px 5px rgb(0, 0, 255);
+      text-shadow: 3px 3px 5px rgb(229, 229, 229);
 }
 
 
-
-h4 {
-  color: #ffffff;
-  font-size: small;
-  font-family: monospace;
-  font-size: 15px
-
-
-}
 
 p {
-  font-family: "Pokemon", sans-serif;
+  font-family:"cursive";
       font-size: 40px;
       color: yellow !important;
       text-shadow: 3px 3px 5px rgb(0, 0, 255);
 }
 
 .texto3{
-  font-family: "Pokemon", sans-serif;
+  font-family: "cursive";
   font-size: 40px;
   color: rgb(136, 0, 255) !important;
-  text-shadow: 3px 3px 5px rgb(0, 0, 255);
+  text-shadow: 3px 3px 5px rgb(174, 0, 255);
 }
 .texto4{
-  font-family: "Pokemon", sans-serif;
+  font-family:"cursive";
       font-size: 40px;
       color: rgb(0, 60, 255) !important;
       text-shadow: 3px 3px 5px rgb(255, 255, 255);
 }
 .texto5{
-  font-family: "Pokemon", sans-serif;
+  font-family:"cursive";
       font-size: 40px;
       color: rgb(255, 106, 0) !important;
       text-shadow: 3px 3px 5px rgb(255, 255, 255);
 }
 .texto6{
-  font-family: "Pokemon", sans-serif;
+  font-family:"cursive";
   font-size: 40px;
   color: rgb(0, 0, 0) !important;
   text-shadow: 3px 3px 5px rgb(255, 242, 0);
 }
 .texto7{
-  font-family: "Pokemon", sans-serif;
+  font-family: "cursive";
   font-size: 40px;
   color: rgb(197, 255, 104) !important;
   text-shadow: 3px 3px 5px rgb(0, 255, 21);
   }
 .texto8{
-  font-family: "Pokemon", sans-serif;
+  font-family:"cursive";
       font-size: 40px;
       color: rgb(243, 129, 7) !important;
       text-shadow: 3px 3px 5px rgb(255, 255, 255);
 }
 .texto9{
-  font-family: "Pokemon", sans-serif;
+  font-family:"cursive";
       font-size: 40px;
       color: rgb(255, 255, 255) !important;
       text-shadow: 3px 3px 5px rgb(21, 255, 0);
