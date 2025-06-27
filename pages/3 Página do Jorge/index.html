@@ -27,5 +27,28 @@
         </div>
     </div>
 </nav>
+  <input type="text" id="pokemon" placeholder="Digite o nome do Pokémon" />
+  <button id="buscar">Buscar</button>
+  <div id="info"></div>
+
+  <script>
+    document.getElementById('buscar').addEventListener('click', async () => {
+      const nome = document.getElementById('pokemon').value.toLowerCase();
+      const info = document.getElementById('info');
+
+      try {
+        const resposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${nome}`);
+        if (!resposta.ok) throw new Error();
+
+        const dados = await resposta.json();
+        info.innerHTML = `
+          <h2>${dados.name.toUpperCase()}</h2>
+          <img src="${dados.sprites.front_default}" alt="${dados.name}" />
+        `;
+      } catch (error) {
+        info.innerHTML = '<p>Pokémon não encontrado.</p>';
+      }
+    });
+  </script>
 <body>
 </html>
