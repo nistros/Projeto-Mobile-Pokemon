@@ -7,7 +7,7 @@ body {
 }
 @font-face {
     font-family: "Pokemon";
-    src: url(./assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
+    src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
 }
 a{
         font-family: "Pokemon", sans-serif;
@@ -16,11 +16,22 @@ a{
         text-shadow: 3px 3px 5px rgb(0, 0, 255);
 }
 img{
-    width: 75px;
+    width: 40px;
 }
 p{
     color: rgb(234, 234, 234);
+    align-items: center;
 }
 .Pikachu{
-    width: 100px;
+    width: 40px;
 }
+.lucario{
+    width: 40px;    
+}
+.greninja{
+    width: 40px;
+}
+.blaziken{
+    width: 35px;
+}
+

@@ -1,5 +1,10 @@
 body {
-  background-color: rgb(19, 19, 62);
+  background-image: url('./assets/iPhone\ 16\ -\ 7.png');
+  background-position: center;
+  background-size: 550px;
+  background-repeat: repeat;
+  background-color: black
+  ;
 }
 
 
@@ -14,9 +19,10 @@ h1{
 }
 
 .texto1{
-  color: #ffffff;
-  font-size: 15px;
-  font-family: verdana;
+  font-family: "Pokemon", sans-serif;
+  font-size: 40px;
+  color: rgb(0, 26, 255) !important;
+  text-shadow: 3px 3px 5px rgb(0, 0, 255);
 
 }
 h2{color: #ffffff;
@@ -24,7 +30,16 @@ h2{color: #ffffff;
   
 
 }
-
+@font-face {
+  font-family: "Pokemon";
+  src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
+}
+a{
+      font-family: "Pokemon", sans-serif;
+      font-size: 40px;
+      color: yellow !important;
+      text-shadow: 3px 3px 5px rgb(0, 0, 255);
+}
 
 
 
@@ -36,9 +51,10 @@ h3 {
 
 
 .texto2 {
-  color: #ffffff;
-  font-size: 15px;
-  font-family: verdana;
+  font-family: "Pokemon", sans-serif;
+      font-size: 40px;
+      color: rgb(255, 128, 0) !important;
+      text-shadow: 3px 3px 5px rgb(0, 0, 255);
 }
 
 
@@ -53,29 +69,51 @@ h4 {
 }
 
 p {
-  font-family: monospace;
-  font-size: small;
-  width: 500px;
-  color: #ffffff;
+  font-family: "Pokemon", sans-serif;
+      font-size: 40px;
+      color: yellow !important;
+      text-shadow: 3px 3px 5px rgb(0, 0, 255);
 }
 
 .texto3{
-  color: #ffffff;
-  font-family: Verdana;
-  font-size: 15px;
+  font-family: "Pokemon", sans-serif;
+  font-size: 40px;
+  color: rgb(136, 0, 255) !important;
+  text-shadow: 3px 3px 5px rgb(0, 0, 255);
 }
 .texto4{
-  color: #ffffff;
-  font-family: verdana;
-  font-size: 15px
+  font-family: "Pokemon", sans-serif;
+      font-size: 40px;
+      color: rgb(0, 60, 255) !important;
+      text-shadow: 3px 3px 5px rgb(255, 255, 255);
 }
 .texto5{
-  color: #ffffff;
-  font-family: verdana;
-  font-size: 15px;
+  font-family: "Pokemon", sans-serif;
+      font-size: 40px;
+      color: rgb(255, 106, 0) !important;
+      text-shadow: 3px 3px 5px rgb(255, 255, 255);
 }
 .texto6{
-  color: #ffffff;
-  font-family: verdana;
-  font-size: 15px;
+  font-family: "Pokemon", sans-serif;
+  font-size: 40px;
+  color: rgb(0, 0, 0) !important;
+  text-shadow: 3px 3px 5px rgb(255, 242, 0);
+}
+.texto7{
+  font-family: "Pokemon", sans-serif;
+  font-size: 40px;
+  color: rgb(197, 255, 104) !important;
+  text-shadow: 3px 3px 5px rgb(0, 255, 21);
+  }
+.texto8{
+  font-family: "Pokemon", sans-serif;
+      font-size: 40px;
+      color: rgb(243, 129, 7) !important;
+      text-shadow: 3px 3px 5px rgb(255, 255, 255);
+}
+.texto9{
+  font-family: "Pokemon", sans-serif;
+      font-size: 40px;
+      color: rgb(255, 255, 255) !important;
+      text-shadow: 3px 3px 5px rgb(21, 255, 0);
 }
