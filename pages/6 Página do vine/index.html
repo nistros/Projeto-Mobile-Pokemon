@@ -34,27 +34,35 @@
     <button id="buscar">Buscar</button>
     <div id="info"></div>
   
-    <script>
-      document.getElementById('buscar').addEventListener('click', async () => {
-        const nome = document.getElementById('pokemon').value.toLowerCase();
-        const info = document.getElementById('info');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Game </title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <nav class="game-navbar">
+        <div class="navbar-brand">
+          <img id="pokemonImage" class="gallery-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Pokémon">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu Icon" class="brand-icon">
+            <h1>pokemon</h1>
+        </div>
+        <ul class="navbar-links">
+         
+        </div>
+    </nav>
+
+    <main class="content">
+        <h2>Bem-vindo ao Centro Pokémon!</h2>
+        <p>Use a barra de pesquisa acima para encontrar seus Pokémon favoritos.</p>
+        <p>Explore o mundo Pokémon com estilo de jogo!</p>
+    </main>
+
+    <script src="script.js"></script>
+
   
-        try {
-          const resposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${nome}`);
-          if (!resposta.ok) throw new Error();
   
-          const dados = await resposta.json();
-          info.innerHTML = `
-            <h2>${dados.name.toUpperCase()}</h2>
-            <img src="${dados.sprites.front_default}" alt="${dados.name}" />
-          `;
-        } catch (error) {
-          info.innerHTML = '<p>Pokémon não encontrado.</p>';
-        }
-      });
-    </script>
-  
-  <img src="assets/Pok-mon-23-05-2025.png" alt="">
 
     
 
