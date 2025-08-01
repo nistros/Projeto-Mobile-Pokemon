@@ -1,12 +1,79 @@
 body {
-    background-image: url(https://mrwallpaper.com/images/high/minimalist-dragonite-evolution-6omtl4v0h4nijn45.webp);
-background-size: 255%;
-background-repeat: repeat;
-background-position: left;
-background-color: #97b3de;
-div {
-    padding: 0,5%;
-    padding-left: 0,5%;
-}
-
-}
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-bottom: 80px; /* Espaço para a navbar fixa no rodapé */
+        background-color: #2a9d8f;
+        }
+        
+        h1 {
+            color: #e63946;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .type-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .type-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .type-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .type-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .type-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .advantages h3, .weaknesses h3 {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .advantages ul, .weaknesses ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        
+        .advantages li {
+            color: #2a9d8f;
+        }
+        
+        .weaknesses li {
+            color: #e63946;
+        }
+        
+        .icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+        }
