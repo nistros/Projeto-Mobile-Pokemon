@@ -1,31 +1,177 @@
-body {
-background-image: url('https://preview.redd.it/vtbk068l99lz.png?width=640&crop=smart&auto=webp&s=af542b12e284b195c5c3e5142e0b581c7b042341');
-background-position: center;
-background-repeat: no-repeat;
-height: 100vh;
-background-color: #4597eb;
-font-family: Arial, Helvetica, sans-serif
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.imgur.com/JWQ9D9E.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    background-color: rgb(0, 217, 255);
+}
+.pokedex {
+    width: 350px;
+    background-color: rgba(50, 50, 50, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    position: relative;
+    border: 3px solid #f8f8f8;
+    background-color: rgba(255, 0, 0, 0.999);
+}
+
+.search-container {
+    margin-bottom: 15px;
+}
+
+#pokemon-search {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #333;
+    font-size: 16px;
+}
+
+.screen {
+    background-color: #8bbbd6;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 3px solid #333;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.pokemon-image {
+    background-color: white;
+    border-radius: 5px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.pokemon-image img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s ease;
+}
+
+.pokemon-info {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #333;
+    color: #333;
+}
+
+.pokemon-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    text-transform: capitalize;
+    color: #d32f2f;
+}
+
+.pokemon-number {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+}
+
+.pokemon-types {
+    display: flex;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.type {
+    padding: 3px 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.pokemon-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.stat {
+    font-size: 14px;
+}
+
+.pokemon-description {
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-select {
+    background-color: #4CAF50;
+    width: 100px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.suggestions {
+    position: absolute;
+    width: 310px;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-top: 5px;
+    z-index: 10;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+    color: #333;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+
 }
 @font-face {
     font-family: "Pokemon";
     src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
 }
 a{
-        font-family: "Pokemon", sans-serif;
-        font-size: 40px;
-        color: yellow !important;
-        text-shadow: 3px 3px 5px rgb(0, 0, 255);
-}
-h1{
-   
- font-family: "Pokemon", sans-serif;
-        font-size: 40px;
-        color: yellow !important;
-        text-shadow: 3px 3px 5px rgb(0, 0, 255);
-}
-p{
     font-family: "Pokemon", sans-serif;
-        font-size: 40px;
-        color: yellow !important;
-        text-shadow: 3px 3px 5px rgb(0, 0, 255);
+    font-size: 40px;
+    color: rgb(229, 255, 0) !important;
+    text-shadow: 3px 3px 5px rgb(34, 0, 255);
 }
