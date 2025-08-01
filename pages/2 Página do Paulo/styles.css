@@ -1,5 +1,10 @@
 body {
-    background-image: "assets\manman.jpg"
+    background-image: url('./assets/manman.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: "100%";
+    width: "100%";
   }
   
   h1 {
@@ -8,12 +13,19 @@ body {
   }
   
   p {
-    color: rgb(180, 0, 0);
-    font-family: verdana;
+    color: rgb(0, 0, 0);
+    font-family: 'Bangers', cursive;
+    color: white;
+    text-shadow:
+      -2px -2px 0 black,
+       2px -2px 0 black,
+      -2px  2px 0 black,
+       2px  2px 0 black;
     font-size: 20px;
   }
   img{
     width: 300px;
-    margin: 38px;
-    margin-top: -25px;
+    margin: 50px;
+    margin-top: 6px;
   }
+  
