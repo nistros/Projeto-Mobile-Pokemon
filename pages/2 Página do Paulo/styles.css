@@ -11,23 +11,135 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
   }
-  
-  p {
-    color: rgb(0, 0, 0);
-    font-family: 'Bangers', cursive;
-    color: white;
-    text-shadow:
-      -2px -2px 0 black,
-       2px -2px 0 black,
-      -2px  2px 0 black,
-       2px  2px 0 black;
-    font-size: 20px;
-  }
+
  .imagem-baixo {
   width: 300px;
   margin: 6px auto;
   display: block;
 }
+/* Evita conflito com body, h1 e .imagem-baixo existentes */
 
+.poke-search-input {
+  display: block;
+  margin: 10px auto 20px auto;
+  padding: 8px 12px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
 
-  
+.poke-tabs-container {
+  margin: 20px auto;
+  max-width: 1000px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+}
+
+#poke-tabs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.poke-tab-btn {
+  padding: 8px 14px;
+  margin: 4px;
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.poke-tab-btn:hover {
+  background-color: #c0c0c0;
+}
+
+.poke-letra-titulo {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.poke-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.poke-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.poke-nome {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.poke-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.poke-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 140px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.poke-item:hover {
+  transform: scale(1.05);
+}
+
+.poke-item img.imagem-baixo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+.poke-nome {
+  display: block;
+  font-size: 14px;
+  text-transform: capitalize;
+  word-break: break-word;
+}
+
+/* Responsividade extra para telas pequenas */
+@media (max-width: 600px) {
+  .poke-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .poke-item img.imagem-baixo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .poke-nome {
+    font-size: 13px;
+  }
+}
