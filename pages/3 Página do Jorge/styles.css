@@ -1,13 +1,15 @@
 body {
-    background-image: url('assets/jorge.jpg');
-    background-size: cover;
+    background-image: url('assets/High_resolution_wallpaper_background_ID_77700481936.webp');
+    background-size: cover; /* Preenche o espaço sem distorcer */
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-repeat: repeat;
+    width: 100vw; /* 100% da largura da tela */
+    height: 100vh; /* 100% da altura da tela */
+    overflow: hidden; 
 }
 @font-face {
     font-family: "Pokemon";
-    src: url(./assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
+    src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
 }
 a{
         font-family: "Pokemon", sans-serif;
@@ -20,17 +22,5 @@ img{
 }
 p{
     color: rgb(234, 234, 234);
+    align-items: center;
 }
-.Pikachu{
-    width: 40px;
-}
-.lucario{
-    width: 40px;    
-}
-.greninja{
-    width: 40px;
-}
-.blaziken{
-    width: 35px;
-}
-

@@ -1,14 +1,17 @@
 
-img{
-    width: 320px;
-    position: align-center;
-    margin-left: 40h;
+img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30vh;
 }
+
 body {
-        background-image: url('assets/znifk7fc.png');
+        background-color: rgba(250, 255, 151, 0.419);
         background-size: cover; /* Preenche o espaço sem distorcer */
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         width: 100vw; /* 100% da largura da tela */
         height: 100vh; /* 100% da altura da tela */
         overflow: hidden; 
@@ -20,32 +23,22 @@ body {
 a{
     font-family: "Pokemon", sans-serif;
     font-size: 40px;
-    color: yellow !important;
-    text-shadow: 3px 3px 5px rgb(0, 0, 255);
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 .navbar {
     display: flex;
     justify-content: space-between;
 }
-@media (max-width: 768px) {
-    .navbar {
-        bottom: 0;
-        position: fixed;
-        flex-direction: column;
-        align-items: center;
-        height: 10vh;
-        width: 50vh;
-    }   
-}
-.navbar-collapse {
-    position: absolute;
-    width: 100%;
-    background-color: #343a40; /* Cor de fundo para evitar transparência */
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
-    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-}
-.navbar-collapse.show {
-    transform: translateY(1); 
-}
+.roberto {
+    width: 380px;
+    height: auto;
+    text-align: center;
+    background-color: #888080;
+    padding: 100px;
+  }
+
+  .roberto img {
+    max-width: 100%;
+    height: auto;
+  }
