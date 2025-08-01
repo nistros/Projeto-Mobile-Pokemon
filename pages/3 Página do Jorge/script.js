@@ -23,4 +23,4 @@ document.getElementById('buscar').addEventListener('click', async () => {
     } catch (error) {
       info.innerHTML = '<p>Pokémon não encontrado. Tente outro nome!</p>';
     }
-  });
+  })

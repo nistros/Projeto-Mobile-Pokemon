@@ -4,16 +4,14 @@ img {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 30vh;
+    height: 1vh;
 }
 
 body {
-        background-color: rgba(250, 255, 151, 0.419);
-        background-size: cover; /* Preenche o espaço sem distorcer */
+        background-color: rgba(227, 229, 122, 0.419);
+        background-size: cover;
         background-position: center;
         background-repeat: repeat;
-        width: 100vw; /* 100% da largura da tela */
-        height: 100vh; /* 100% da altura da tela */
         overflow: hidden; 
     }
 @font-face {
@@ -31,10 +29,10 @@ a{
     justify-content: space-between;
 }
 .roberto {
-    width: 380px;
+    display: flex;
+    width: auto;
     height: auto;
-    text-align: center;
-    background-color: #888080;
+    background-color: #3d3e32;
     padding: 100px;
   }
 
@@ -42,3 +40,17 @@ a{
     max-width: 100%;
     height: auto;
   }
+  h1 {
+    font-family: "Pokemon", sans-serif;
+    font-size: 10vh;
+    color: rgb(217, 255, 0) !important;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    margin: 0;
+    padding: 10px;
+}
