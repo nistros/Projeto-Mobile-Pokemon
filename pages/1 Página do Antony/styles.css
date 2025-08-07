@@ -31,14 +31,17 @@ a{
     justify-content: space-between;
 }
 .roberto {
-    width: 380px;
+    display: flex;
+    width: auto;
     height: auto;
-    text-align: center;
-    background-color: #888080;
+    text-align: top;
+    background-color: #3e3434;
     padding: 100px;
   }
-
-  .roberto img {
-    max-width: 100%;
-    height: auto;
-  }
+h1{
+    font-family: "Pokemon";
+    src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
+    color: rgb(246, 255, 0);
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-align: centers;
+}
