@@ -24,3 +24,22 @@ p{
     color: rgb(234, 234, 234);
     align-items: center;
 }
+
+.pokemon-result {
+    font-family: "Pokemon", sans-serif;
+        font-size: 20px;
+        color: rgb(255, 255, 0) !important;
+        text-shadow: 3px 3px 5px rgb(0, 0, 255);  
+  }
+  .pokemon-result p {
+    font-family:  sans-serif;
+    color: yellow;
+}
+  .pokemon-img{
+    width: 150px;
+    height: auto;
+  }
+.macaco{
+    text-align: top;
+    margin-top: 40px;
+  }
