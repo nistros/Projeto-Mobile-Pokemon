@@ -1,5 +1,5 @@
 body {
-  background-image: url('./assets/lucario 2.png');
+    background-image: url('./assets/Lucario.png');
   background-size: cover; /* Preenche o espaço sem distorcer */
   background-position: center;
   background-repeat: repeat;
@@ -10,96 +10,6 @@ body {
   
 }
 
-
-
-img {
-  width: 500px;
- }
-.texto1{
-  font-family:"cursive";
-  font-size: 40px;
-  color: rgb(0, 26, 255) !important;
-  text-shadow: 3px 3px 5px rgb(0, 0, 255);
-
-}
-
-  
-
-
-@font-face {
-  font-family: "cursive";
-  src: url format("truetype");
-}
-a{
-      font-family:"cursive";
-      font-size: 40px;
-      color: yellow !important;
-      text-shadow: 3px 3px 5px rgb(0, 0, 255);
-}
-
-
-
-
-
-
-.texto2 {
-  font-family:"cursive";
-      font-size: 40px;
-      color: rgb(255, 128, 0) !important;
-      text-shadow: 3px 3px 5px rgb(229, 229, 229);
-}
-
-
-
-p {
-  font-family:"cursive";
-      font-size: 40px;
-      color: yellow !important;
-      text-shadow: 3px 3px 5px rgb(0, 0, 255);
-}
-
-.texto3{
-  font-family: "cursive";
-  font-size: 40px;
-  color: rgb(136, 0, 255) !important;
-  text-shadow: 3px 3px 5px rgb(174, 0, 255);
-}
-.texto4{
-  font-family:"cursive";
-      font-size: 40px;
-      color: rgb(0, 60, 255) !important;
-      text-shadow: 3px 3px 5px rgb(255, 255, 255);
-}
-.texto5{
-  font-family:"cursive";
-      font-size: 40px;
-      color: rgb(255, 106, 0) !important;
-      text-shadow: 3px 3px 5px rgb(255, 255, 255);
-}
-.texto6{
-  font-family:"cursive";
-  font-size: 40px;
-  color: rgb(0, 0, 0) !important;
-  text-shadow: 3px 3px 5px rgb(255, 242, 0);
-}
-.texto7{
-  font-family: "cursive";
-  font-size: 40px;
-  color: rgb(197, 255, 104) !important;
-  text-shadow: 3px 3px 5px rgb(0, 255, 21);
-  }
-.texto8{
-  font-family:"cursive";
-      font-size: 40px;
-      color: rgb(243, 129, 7) !important;
-      text-shadow: 3px 3px 5px rgb(255, 255, 255);
-}
-.texto9{
-  font-family:"cursive";
-      font-size: 40px;
-      color: rgb(255, 255, 255) !important;
-      text-shadow: 3px 3px 5px rgb(21, 255, 0);
-       }
 /* Importa a fonte pixelada */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -244,20 +154,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
-
-.content h1 {
-    color: #f1c40f;
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
-}
-
-.content p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
 h1{
-  flex-direction: column;
-  text-align: center;
+    max-height: 500px;
+    max-width: 500px;
+font-family: fantasy;
+color:  black;
 }

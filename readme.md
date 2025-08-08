@@ -1,1 +1,4 @@
-programei e já terminei
+bom, esse trabalho foi bem interresante. 
+mas vou direto aos problemas porque sei que você gosta né, bom a curiosidade do trabalho acabou me matando muito porque não estava disponivel em portugues, então deixei em ingles mesmo, ia deixar onde esta as curiosidade,tipo e poder como carta de taro mas ai ficou estranho com esse fundo azul então deixe ele transparente que ficou bem melhor e a fonte preta. 
+tem todos os pokemons então pesquise ate o pokemon mais raro que ele vai aparecer (desde que escreva certo, uma dica é você escrever certo kkk).
+em geral o trabalho foi bem até, fora os diversos problemas de codigo e umas dores de cabeça cabulosas.

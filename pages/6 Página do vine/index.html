@@ -30,116 +30,207 @@
             </div>
         </div>
     </nav>
-    <input type="text" id="pokemon" placeholder="Digite o nome do Pokémon" />
-    <button id="buscar">Buscar</button>
-    <div id="info"></div>
+
   
+    
+
+   
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon Game </title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
+    <title>Pesquisar Pokémon</title>
+    <style>
+        body {
+            background-color: #2d4d66;
+            color: white;
+            font-family: monospace;
+            text-align: center;
+            padding-top: 50px;
+        }
+        input {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid orange;
+            border-radius: 5px;
+            outline: none;
+        }
+        button {
+            padding: 8px 15px;
+            font-size: 16px;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        img {
+            margin-top: 20px;
+            width: 150px;
+        }
+        .info {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+        }
+    </style>
 </head>
 <body>
 
-    <nav class="game-navbar">
-        <div class="navbar-brand">
-          <img id="pokemonImage" class="gallery-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Pokémon">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu Icon" class="brand-icon">
-            <h1>pokemon</h1>
-        </div>
-        <ul class="navbar-links">
-         
-        </div>
-    </nav>
+  <meta charset="UTF-8">
+  <title>Pesquisar Pokémon</title>
+  <style>
+      body {
+          background-color: #2d4d66;
+          color: white;
+          font-family: monospace;
+          text-align: center;
+          padding-top: 50px;
+      }
+      input {
+          padding: 8px;
+          font-size: 16px;
+          border: 2px solid orange;
+          border-radius: 5px;
+          outline: none;
+      }
+      button {
+          padding: 8px 15px;
+          font-size: 16px;
+          background-color: orange;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      img {
+          margin-top: 20px;
+          width: 150px;
+      }
+      .info {
+          margin-top: 20px;
+          background-color: rgba(255, 255, 255, 0.1);
+          padding: 15px;
+          border-radius: 10px;
+          display: inline-block;
+          text-align: left;
+          max-width: 400px;
+      }
+  </style>
+</head>
+<body>
 
-    <main class="content">
-        <h2>Bem-vindo ao Centro Pokémon!</h2>
-        <p>Use a barra de pesquisa acima para encontrar seus Pokémon favoritos.</p>
-        <p>Explore o mundo Pokémon com estilo de jogo!</p>
-    </main>
+  <meta charset="UTF-8">
+  <title>Pesquisar Pokémon</title>
+  <style>
+      body {
+          background-color: #2d4d66;
+          color: rgb(0, 0, 0);
+          font-family: monospace;
+          text-align: center;
+          padding-top: 50px;
+      }
+      input {
+          padding: 8px;
+          font-size: 16px;
+          border: 2px solid orange;
+          border-radius: 5px;
+          outline: none;
+      }
+      button {
+          padding: 8px 15px;
+          font-size: 16px;
+          background-color: orange;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      img {
+          margin-top: 20px;
+          width: 150px;
+      }
+      .info {
+          margin-top: 20px;
+          background-color: rgba(255, 255, 255, 0.1);
+          padding: 15px;
+          border-radius: 10px;
+          display: inline-block;
+          text-align: left;
+          max-width: 400px;
+      }
+  </style>
+</head>
+<body>
 
+  <h1>Pesquisar Pokémon</h1>
+  <input type="text" id="pokemonName" placeholder="Digitar nome do bicho">
+  <button onclick="buscarPokemon()">achar</button>
+
+  <div id="resultado"></div>
+
+  <script>
+      async function buscarPokemon() {
+          const nome = document.getElementById('pokemonName').value.toLowerCase().trim();
+          const resultado = document.getElementById('resultado');
+          resultado.innerHTML = '';
+
+          if (!nome) {
+              resultado.innerHTML = '<p>Digita o nome do pokemon né home!</p>';
+              return;
+          }
+
+          try {
+              // Requisição principal
+              const resposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${nome}`);
+              if (!resposta.ok) throw new Error('Pokémon não encontrado');
+              const dados = await resposta.json();
+
+              // Pega os tipos
+              const tipos = dados.types.map(t => t.type.name).join(', ');
+
+              // Pega habilidades (poderes)
+              const poderes = dados.abilities.map(h => h.ability.name).join(', ');
+
+              // Busca curiosidade em inglês
+              const especieResp = await fetch(dados.species.url);
+              const especieDados = await especieResp.json();
+              const curiosidadeEN = especieDados.flavor_text_entries.find(
+                  entry => entry.language.name === "en"
+              )?.flavor_text.replace(/\f/g, ' ') || "No curiosity available";
+
+              // Mostra tudo
+              resultado.innerHTML = `
+                  <h2>${dados.name.toUpperCase()}</h2>
+                  <img src="${dados.sprites.front_default}" alt="${dados.name}">
+                  <div class="info">
+                      <p><strong>Tipo:</strong> ${tipos}</p>
+                      <p><strong>Curiosidade:</strong> ${curiosidadeEN}</p>
+                      <p><strong>Poderes:</strong> ${poderes}</p>
+                  </div>
+              `;
+          } catch (error) {
+              resultado.innerHTML = `<p>❌ escreve certo seu burro!</p>`;
+          }
+      }
+  </script>
+    
     <script src="script.js"></script>
-
-  
-  
-
+    
+    
+    
+   
+      
+      
+    </body>
+    
+    </html>
+    
+    
+    
+    
     
 
 
 
-  <p class="texto1">
-
-      Lucario, Lutador e Aço. 
-      
-      
-  </p>
-
   
-
-
-  <p>
-      Pikachu,tipo eletrico/trovão
-      
-      </p>
-
   
-
-  <p class="texto2"> 
-
-      Charizard, Fogo/Voador.
-      
-      .</p>
-
- 
-
-  <p class="texto3">Gengar, Fantasma/Venenoso.</p>
-
-  
-
-  <p class="texto4">
-      
-Greninja, Água/Sombrio 
-
-</p>
-
- 
-
-  <p class="texto5">
-      Arcanine, Fogo.</p>
-
-
-
-  <p class="texto6">
-      Umbreon, Noturno.
-      
-      </p>
-
-    
-
-      <p class="texto7">
-         Bulbasaur, Planta/Venenoso.
-          
-          
-      </p>
-
-      
-
-      <p class="texto8">
-          
-       Blaziken, Fogo/Lutador.
-      </p>
-
-
-
-  <p class="texto9">
-      
-      Gardevoir, Psíquico/Fada.
-  </p>
-
-  
-    
-
-</body>
-
-</html>
