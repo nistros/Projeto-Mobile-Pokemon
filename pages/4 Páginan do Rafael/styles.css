@@ -1,10 +1,250 @@
 body {
-background-image: url('https://preview.redd.it/vtbk068l99lz.png?width=640&crop=smart&auto=webp&s=af542b12e284b195c5c3e5142e0b581c7b042341');
-background-position: center;
-background-repeat: no-repeat;
-height: 100vh;
-background-color: #4597eb;
-font-family: Arial, Helvetica, sans-serif
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://i.imgur.com/JWQ9D9E.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.pokemon-font {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffcc00 !important;
+    text-shadow: 3px 3px 0 #2a52be, -1px -1px 0 #2a52be;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.pokedex {
+    background-color: #e71d1d;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 5px solid #333;
+    position: relative;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#pokemon-search {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 3px solid #333;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.screen {
+    background-color: #8bbbd6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 4px solid #333;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-image {
+    background-color: #fff;
+    border-radius: 8px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 3px solid #333;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.pokemon-image img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s ease;
+}
+
+.pokemon-image img:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-info {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    border: 3px solid #333;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pokemon-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.pokemon-number {
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pokemon-types {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.type {
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.pokemon-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stat {
+    color: #444;
+}
+
+.pokemon-description {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #111;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+}
+
+.btn-select {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+}
+
+.suggestions {
+    position: absolute;
+    width: calc(100% - 6px);
+    max-height: 250px;
+    overflow-y: auto;
+    background: white;
+    border: 3px solid #333;
+    border-radius: 0 0 10px 10px;
+    margin-top: -3px;
+    z-index: 100;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+/* Cores para tipos de Pokémon */
+.type-normal { background-color: #A8A878; }
+.type-fire { background-color: #F08030; }
+.type-water { background-color: #6890F0; }
+.type-electric { background-color: #F8D030; }
+.type-grass { background-color: #78C850; }
+.type-ice { background-color: #98D8D8; }
+.type-fighting { background-color: #C03028; }
+.type-poison { background-color: #A040A0; }
+.type-ground { background-color: #E0C068; }
+.type-flying { background-color: #A890F0; }
+.type-psychic { background-color: #F85888; }
+.type-bug { background-color: #A8B820; }
+.type-rock { background-color: #B8A038; }
+.type-ghost { background-color: #705898; }
+.type-dragon { background-color: #7038F8; }
+.type-dark { background-color: #705848; }
+.type-steel { background-color: #B8B8D0; }
+.type-fairy { background-color: #EE99AC; }
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .main-content {
+        padding: 10px;
+    }
+    
+    .pokedex {
+        padding: 15px;
+    }
+    
+    .pokemon-name {
+        font-size: 24px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
 }
 @font-face {
     font-family: "Pokemon";
@@ -12,19 +252,6 @@ font-family: Arial, Helvetica, sans-serif
 }
 a{
         font-family: "Pokemon", sans-serif;
-        font-size: 40px;
-        color: yellow !important;
-        text-shadow: 3px 3px 5px rgb(0, 0, 255);
-}
-h1{
-   
- font-family: "Pokemon", sans-serif;
-        font-size: 40px;
-        color: yellow !important;
-        text-shadow: 3px 3px 5px rgb(0, 0, 255);
-}
-p{
-    font-family: "Pokemon", sans-serif;
         font-size: 40px;
         color: yellow !important;
         text-shadow: 3px 3px 5px rgb(0, 0, 255);
