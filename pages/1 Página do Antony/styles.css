@@ -1,72 +1,82 @@
-@font-face {
-    font-family: "Pokemon";
-    src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
-  }
-  
-  /* Flexbox geral */
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .main-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: rgba(250, 255, 151, 0.419);
-  }
-  
-  /* Título Pokémon */
-  .roberto {
-    display: flex;
-    justify-content: top center;
-    align-items: top center;
-    background-color: #000;
-    padding: 20px 400vh;
-  }
-  
-  h1 {
-    font-family: "Pokemon", sans-serif;
-    font-size: 6vh;
-    color: #ff0;
-    text-shadow: 2px 2px 0 #000, 4px 4px 5px rgba(0,0,0,0.5);
-    margin: 0;
-  }
-  
-  /* Imagem */
-  img {
-    height: 30vh;
-    margin-bottom: 20px;
-  }
-  
-  /* Formulário */
-  .form-container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    width: 90%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
+ @font-face {
+      font-family: "Pokemon";
+      src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
+    }
+
+ 
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(250, 255, 151, 0.419);
+      min-height: 100vh;
+      overflow-x: hidden; /* evita scroll horizontal */
+    }
+
+
+    .roberto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      padding: 10px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    /* Título Pokémon */
     h1 {
-      font-size: 4vh;
+      font-family: "Pokemon", sans-serif;
+      font-size: 6vh;
+      color: #ff0;
+      text-shadow: 2px 2px 0 #000, 4px 4px 5px rgba(0,0,0,0.5);
+      margin: 0;
     }
-  
+
+    /* Imagem */
     img {
-      height: 20vh;
+      height: 30vh;
+      margin-top: 80px; /* espaço por causa da faixa fixa */
+      margin-bottom: 20px;
     }
-  
+
+    /* Formulário */
     .form-container {
-      width: 95%;
-      padding: 15px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-  }
-  
-  
+
+    /* Foco visível para acessibilidade */
+    input:focus, button:focus {
+      outline: 3px solid #ff0;
+      outline-offset: 2px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 4vh;
+      }
+      img {
+        height: 20vh;
+      }
+      .form-container {
+        width: 95%;
+        padding: 15px;
+      }
+    }
