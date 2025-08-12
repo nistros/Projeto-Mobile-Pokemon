@@ -1,26 +1,24 @@
-document.getElementById('buscar').addEventListener('click', async () => {
-    const nome = document.getElementById('pokemon').value.toLowerCase();
-    const info = document.getElementById('info');
-  
-    try {
-      const resposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${nome}`);
-      if (!resposta.ok) throw new Error();
-  
-      const dados = await resposta.json();
-      const habilidades = dados.abilities.map(a => a.ability.name).join(', ');
-      const stats = dados.stats.map(s => `<li>${s.stat.name.toUpperCase()}: ${s.base_stat}</li>`).join('');
-  
-      info.innerHTML = `
-        <h2>${dados.name.toUpperCase()}</h2>
-        <img src="${dados.sprites.front_default}" alt="${dados.name}" />
-        <p><strong>Altura:</strong> ${dados.height}</p>
-        <p><strong>Peso:</strong> ${dados.weight}</p>
-        <p><strong>Tipo(s):</strong> ${dados.types.map(t => t.type.name).join(', ')}</p>
-        <p><strong>Habilidades:</strong> ${habilidades}</p>
-        <h3>Estatísticas</h3>
-        <ul>${stats}</ul>
-      `;
-    } catch (error) {
-      info.innerHTML = '<p>Pokémon não encontrado. Tente outro nome!</p>';
-    }
-  })
+document.addEventListener('DOMContentLoaded', () => {
+  const botao = document.getElementById('buscarBtn');
+  botao.addEventListener('click', buscarPokemon);
+});
+
+async function buscarPokemon() {
+  const nome = document.getElementById('pokemonInput').value.toLowerCase();
+  const url = `https://pokeapi.co/api/v2/pokemon/${nome}`;
+
+  try {
+    const resposta = await fetch(url);
+    const dados = await resposta.json();
+
+    document.getElementById('result').innerHTML = `
+      <h2>${dados.name.toUpperCase()}</h2>
+      <img src="${dados.sprites.front_default}" alt="${dados.name}" class="pokemon-img">
+      <p><strong>Tipo:</strong> ${dados.types.map(t => t.type.name).join(', ')}</p>
+      <p><strong>Altura:</strong> ${dados.height / 10} m</p>
+      <p><strong>Peso:</strong> ${dados.weight / 10} kg</p>
+    `;
+  } catch (erro) {
+    document.getElementById('result').innerHTML = `<p>Pokémon não encontrado 😢</p>`;
+  }
+}

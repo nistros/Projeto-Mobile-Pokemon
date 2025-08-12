@@ -1,56 +1,72 @@
-
-img {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 1vh;
-}
-
-body {
-        background-color: rgba(227, 229, 122, 0.419);
-        background-size: cover;
-        background-position: center;
-        background-repeat: repeat;
-        overflow: hidden; 
-    }
 @font-face {
     font-family: "Pokemon";
     src: url(../../assets/pokemon/Pokemon\ Solid.ttf) format("truetype");
-}
-a{
-    font-family: "Pokemon", sans-serif;
-    font-size: 40px;
-    color: rgb(255, 255, 255) !important;
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
-.roberto {
-    display: flex;
-    width: auto;
-    height: auto;
-    background-color: #3d3e32;
-    padding: 100px;
   }
-
-  .roberto img {
-    max-width: 100%;
-    height: auto;
+  
+  /* Flexbox geral */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
   }
+  
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(250, 255, 151, 0.419);
+  }
+  
+  /* Título Pokémon */
+  .roberto {
+    display: flex;
+    justify-content: top center;
+    align-items: top center;
+    background-color: #000;
+    padding: 20px 400vh;
+  }
+  
   h1 {
     font-family: "Pokemon", sans-serif;
-    font-size: 10vh;
-    color: rgb(217, 255, 0) !important;
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
-    
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000; /* Garante que fique acima de outros elementos */
+    font-size: 6vh;
+    color: #ff0;
+    text-shadow: 2px 2px 0 #000, 4px 4px 5px rgba(0,0,0,0.5);
     margin: 0;
-    padding: 10px;
-}
+  }
+  
+  /* Imagem */
+  img {
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulário */
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 4vh;
+    }
+  
+    img {
+      height: 20vh;
+    }
+  
+    .form-container {
+      width: 95%;
+      padding: 15px;
+    }
+  }
+  
+  
