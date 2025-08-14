@@ -204,7 +204,7 @@ body {
     border-bottom: none;
 }
 
-/* Cores para tipos de Pokémon */
+
 .type-normal { background-color: #A8A878; }
 .type-fire { background-color: #F08030; }
 .type-water { background-color: #6890F0; }
@@ -224,7 +224,7 @@ body {
 .type-steel { background-color: #B8B8D0; }
 .type-fairy { background-color: #EE99AC; }
 
-/* Responsividade */
+
 @media (max-width: 576px) {
     .main-content {
         padding: 10px;

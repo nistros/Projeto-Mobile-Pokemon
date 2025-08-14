@@ -166,7 +166,7 @@
   <input type="text" id="pokemonName" placeholder="Digitar nome do bicho">
   <button onclick="buscarPokemon()">achar</button>
 
-  <div id="resultado"></div>
+  <div id="resultado"></div> 
 
   <script>
       async function buscarPokemon() {
@@ -200,18 +200,22 @@
 
               // Mostra tudo
               resultado.innerHTML = `
+              
                   <h2>${dados.name.toUpperCase()}</h2>
                   <img src="${dados.sprites.front_default}" alt="${dados.name}">
+            
                   <div class="info">
                       <p><strong>Tipo:</strong> ${tipos}</p>
                       <p><strong>Curiosidade:</strong> ${curiosidadeEN}</p>
                       <p><strong>Poderes:</strong> ${poderes}</p>
                   </div>
+                  
               `;
           } catch (error) {
               resultado.innerHTML = `<p>❌ escreve certo seu burro!</p>`;
           }
-      }
+      } 
+
   </script>
     
     <script src="script.js"></script>

@@ -1,13 +1,446 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poketagens</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vantagens dos Tipos Pokémon</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Vantagens dos Tipos Pokémon</h1>
+    
+    <div class="type-container">
+        <!-- Normal -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #a8a878;">●</div>
+                <div class="type-name">Normal</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Nenhum</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Lutador</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Fogo -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #f08030;">🔥</div>
+                <div class="type-name">Fogo</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Planta</li>
+                    <li>Gelo</li>
+                    <li>Inseto</li>
+                    <li>Aço</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Água</li>
+                    <li>Terra</li>
+                    <li>Pedra</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Água -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #6890f0;">💧</div>
+                <div class="type-name">Água</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Fogo</li>
+                    <li>Terra</li>
+                    <li>Pedra</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Elétrico</li>
+                    <li>Planta</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Elétrico -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #f8d030;">⚡</div>
+                <div class="type-name">Elétrico</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Água</li>
+                    <li>Voador</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Terra</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Planta -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #78c850;">🌿</div>
+                <div class="type-name">Planta</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Água</li>
+                    <li>Terra</li>
+                    <li>Pedra</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Fogo</li>
+                    <li>Gelo</li>
+                    <li>Venenoso</li>
+                    <li>Voador</li>
+                    <li>Inseto</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Gelo -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #98d8d8;">❄️</div>
+                <div class="type-name">Gelo</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Planta</li>
+                    <li>Terra</li>
+                    <li>Voador</li>
+                    <li>Dragão</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Fogo</li>
+                    <li>Lutador</li>
+                    <li>Pedra</li>
+                    <li>Aço</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Lutador -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #c03028;">🥊</div>
+                <div class="type-name">Lutador</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Normal</li>
+                    <li>Gelo</li>
+                    <li>Pedra</li>
+                    <li>Sombrio</li>
+                    <li>Aço</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Voador</li>
+                    <li>Psíquico</li>
+                    <li>Fada</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Venenoso -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #a040a0;">☠️</div>
+                <div class="type-name">Venenoso</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Planta</li>
+                    <li>Fada</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Terra</li>
+                    <li>Psíquico</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Terra -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #e0c068;">⛰️</div>
+                <div class="type-name">Terra</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Fogo</li>
+                    <li>Elétrico</li>
+                    <li>Venenoso</li>
+                    <li>Pedra</li>
+                    <li>Aço</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Água</li>
+                    <li>Planta</li>
+                    <li>Gelo</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Voador -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #a890f0;">🕊️</div>
+                <div class="type-name">Voador</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Planta</li>
+                    <li>Lutador</li>
+                    <li>Inseto</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Elétrico</li>
+                    <li>Gelo</li>
+                    <li>Pedra</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Psíquico -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #f85888;">🌀</div>
+                <div class="type-name">Psíquico</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Lutador</li>
+                    <li>Venenoso</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Inseto</li>
+                    <li>Fantasma</li>
+                    <li>Sombrio</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Inseto -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #a8b820;">🐛</div>
+                <div class="type-name">Inseto</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Planta</li>
+                    <li>Psíquico</li>
+                    <li>Sombrio</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Fogo</li>
+                    <li>Voador</li>
+                    <li>Pedra</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Pedra -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #b8a038;">🪨</div>
+                <div class="type-name">Pedra</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Fogo</li>
+                    <li>Gelo</li>
+                    <li>Voador</li>
+                    <li>Inseto</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Água</li>
+                    <li>Planta</li>
+                    <li>Lutador</li>
+                    <li>Terra</li>
+                    <li>Aço</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Fantasma -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #705898;">👻</div>
+                <div class="type-name">Fantasma</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Fantasma</li>
+                    <li>Psíquico</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Fantasma</li>
+                    <li>Sombrio</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Dragão -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #7038f8;">🐉</div>
+                <div class="type-name">Dragão</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Dragão</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Gelo</li>
+                    <li>Dragão</li>
+                    <li>Fada</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Sombrio -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #705848;">🌑</div>
+                <div class="type-name">Sombrio</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Fantasma</li>
+                    <li>Psíquico</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Lutador</li>
+                    <li>Inseto</li>
+                    <li>Fada</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Aço -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #b8b8d0;">🛡️</div>
+                <div class="type-name">Aço</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Gelo</li>
+                    <li>Pedra</li>
+                    <li>Fada</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Fogo</li>
+                    <li>Lutador</li>
+                    <li>Terra</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Fada -->
+        <div class="type-card">
+            <div class="type-header">
+                <div class="icon" style="background-color: #ee99ac;">✨</div>
+                <div class="type-name">Fada</div>
+            </div>
+            <div class="advantages">
+                <h3>Vantagens contra:</h3>
+                <ul>
+                    <li>Lutador</li>
+                    <li>Dragão</li>
+                    <li>Sombrio</li>
+                </ul>
+            </div>
+            <div class="weaknesses">
+                <h3>Fraquezas:</h3>
+                <ul>
+                    <li>Venenoso</li>
+                    <li>Aço</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar no rodapé -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
         <div class="container">
             <a class="navbar-brand" href="#">POKÉMON</a>
@@ -16,27 +449,32 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="../1 Página do Antony/index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../1 Página do Antony/index.html">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="../2 Página do Paulo/index.html">Lista dos Pokémons</a></li>
                     <li class="nav-item"><a class="nav-link" href="../3 Página do Jorge/index.html">Altura</a></li>
                     <li class="nav-item"><a class="nav-link" href="../4 Páginan do Rafael/index.html">Peso</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../5 Página do Gustavo/index.html">Vantagens</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../5 Página do Gustavo/index.html">Vantagens</a></li>
                     <li class="nav-item"><a class="nav-link" href="../6 Página do vine/index.html">Tipo</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+<<<<<<< HEAD
     <h1>Vantagens </h1>
     <p>Eletrico: é super efetivo contra tipos Água e Voador, e por não ser afetado pelo status Paralisia.</p>
         <P>Fogo e Voador: O tipo Fogo é super efetivo contra Inseto, Planta, Gelo e Aço, enquanto o tipo Voador é super efetivo contra Inseto, Lutador e Planta.</P>
         <P>tipo Fantasma: é imune a ataques do tipo Normal e Lutador. Já o tipo Veneno é eficaz contra ataques do tipo Fada e Inseto. </P>
-        <P>tipo lutador aço: é eficaz contra Normal, Pedra, Aço, Gelo  e Sombrio, enquanto o tipo Aço é eficaz contra Gelo,  Pedra e Fada.Além disso, o tipo Aço possui imunidade ao tipo Veneno.</P>
-        <P> tipo Água: é forte contra tipos Terra,  Pedra e Fogo, enquanto o tipo Sombrio é forte contra  Fantasma e Psíquico.</P>
-        <P>tipo fogo: eficácia contra tipos Inseto, Planta, Gelo  e Aço.</P>
-        <P>tipo Sombrio: super efetividade contra Pokémon do tipo  Fantasma e Psíquico.</P>
-        <P>tipo planta: é eficaz contra Pokémon dos tipos  Água, Pedra e Terra.</P>
-        <P>tipo lutador:  é super efetivo contra os tipos Normal,  Pedra, Escuro, Gelo e Aço.</P>
+        <P>tipo lutador aço: é eficaz contra Normal, Pedra, Aço, Gelo e Sombrio, enquanto o tipo Aço é eficaz contra Gelo, Pedra e Fada.Além disso, o tipo Aço possui imunidadeao tipo Veneno.</P>
+        <P> tipo Água: é forte contra tipos Terra, Pedra e Fogo, enquanto o tipo Sombrio é forte contra Fantasma e Psíquico.</P>
+        <P>tipo fogo: eficácia contra tipos Inseto, Planta, Gelo e Aço.</P>
+        <P>tipo Sombrio: super efetividade contra Pokémon do tipo Fantasma e Psíquico.</P>
+        <P>tipo planta: é eficaz contra Pokémon dos tipos Água, Pedra e Terra.</P>
+        <P>tipo lutador:  é super efetivo contra os tipos Normal, Pedra, Escuro, Gelo e Aço.</P>
             <P>tipo psíquico:são fortes contra Pokémon do tipo Lutador e Venenoso.</P>
 
+=======
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+>>>>>>> 2a770af2c2ec3304746785bda3cb002ba41d77d5
 </body>
 </html>

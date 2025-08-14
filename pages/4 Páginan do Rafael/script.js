@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Configurações iniciais
+
     const typeColors = {
         normal: '#A8A878',
         fire: '#F08030',
@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
         fairy: '#EE99AC'
     };
 
-    // Variáveis globais
+
     let allPokemon = [];
     let currentPokemonId = 1;
     const totalPokemon = 1025;
 
-    // Elementos DOM
+
     const elements = {
         img: document.getElementById('pokemon-img'),
         name: document.getElementById('pokemon-name'),
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         randomBtn: document.getElementById('random-btn')
     };
 
-    // Função para carregar todos os Pokémon
+
     async function loadAllPokemon() {
         try {
             const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1025');
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Função principal para carregar um Pokémon
+
     async function loadPokemon(id) {
         try {
             // Mostra loading
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Atualiza os dados na interface
+
     function updatePokemonData(data) {
         elements.img.src = data.sprites.other['official-artwork'].front_default || 
                           data.sprites.front_default;
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.name.textContent = capitalizeFirstLetter(data.name);
         elements.number.textContent = `#${data.id.toString().padStart(3, '0')}`;
         
-        // Limpa e adiciona os tipos
+
         elements.types.innerHTML = '';
         data.types.forEach(typeInfo => {
             const type = typeInfo.type.name;
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.weight.textContent = (data.weight / 10).toFixed(1);
     }
 
-    // Carrega a descrição do Pokémon
+
     async function loadPokemonDescription(id) {
         try {
             const response = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}/`);
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Mostra mensagem de erro
+   
     function showError() {
         elements.name.textContent = 'Pokémon não encontrado';
         elements.number.textContent = '#???';
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.description.textContent = 'Não foi possível carregar os dados deste Pokémon.';
     }
 
-    // Configura os eventos de navegação
+    
     function setupNavigation() {
         elements.prevBtn.addEventListener('click', () => {
             if (currentPokemonId > 1) {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Configura o sistema de busca
+   
     function setupSearch() {
         elements.search.addEventListener('input', () => {
             const term = elements.search.value.toLowerCase();
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Fecha sugestões ao clicar fora
+   
         document.addEventListener('click', (e) => {
             if (e.target !== elements.search) {
                 elements.suggestions.style.display = 'none';
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Mostra sugestões de busca
+   
     function showSuggestions(pokemonList) {
         elements.suggestions.innerHTML = '';
         
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Helper para capitalizar strings
+    
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setupNavigation();
         setupSearch();
         
-        // Adiciona evento para teclado
+      
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft') elements.prevBtn.click();
             if (e.key === 'ArrowRight') elements.nextBtn.click();
