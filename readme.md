@@ -9,3 +9,5 @@ quando vocé for pesquisar o pokemon tem a leve chance dele dar uma demorada pra
 não peguei o tipo porque era o mais facil, peguei porque eu meio que no grupo eu sou oque sempre pega oque sobra então peguei esse porque é oque sobrou :
 
  <img src="./pages/6%20Página%20do%20vine/assets/trabaio1.png" alt="trabalho 1">
+ 
+ esse quadro de informações vai ficar tranparente mesmo, pois eu ja deixei a letra preta para deixar mais legivel pra quem fosse ler....
