@@ -9,3 +9,12 @@ quando vocé for pesquisar o pokemon tem a leve chance dele dar uma demorada pra
 não peguei o tipo porque era o mais facil, peguei porque eu meio que no grupo eu sou oque sempre pega oque sobra então peguei esse porque é oque sobrou :
 
  <img src="./pages/6%20Página%20do%20vine/assets/trabaio1.png" alt="trabalho 1">
+
+ Trabalho Mobile Pagina 3 Jorge:
+    Esse trabalho foi bem mais ou menos, vivemos em altos e baixos durante o processo de desenvolvimento do código,
+    na minha parte eu puxei uma api (um pouco eu fiz e um pouco pedi ajuda para o chatgpt) para fazer uma barra de pesquisa e uma lista de pokemons
+    eles estão numerados do 1 ao 1000 e tem da geração 1 até a 9, as informações só aparece o tipo do pokémon apenas, o layout ficou branco porem ficou diversificado.
+    faltou empenho da minha parte mas eu estava "churrascado" de tanto ficar olhando código na minha tela e dando erro no final, mas no final eu consegui fazer e ficou bonito.
+    no geral aparece uma lista de pokémons, navbar, barra de pesquisa e botões para escolher a geração e o tipo do pokémon.
+
+<img src="./pages/3 Página do Jorge/assets/Captura de tela 2025-08-15 091833.png" alt="trabalho 2">
