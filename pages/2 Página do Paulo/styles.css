@@ -1,31 +1,37 @@
 body {
-    background-image: url('./assets/manman.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    height: "100%";
-    width: "100%";
-  }
-  
-  h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-  }
-  
-  p {
-    color: rgb(0, 0, 0);
-    font-family: 'Bangers', cursive;
-    color: white;
-    text-shadow:
-      -2px -2px 0 black,
-       2px -2px 0 black,
-      -2px  2px 0 black,
-       2px  2px 0 black;
-    font-size: 20px;
-  }
-  img{
-    width: 300px;
-    margin: 50px;
-    margin-top: 6px;
-  }
-  
+  background-image: url('./assets/manman.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.imagem-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+img.imagem-baixo {
+  width: 300px;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+p {
+  font-family: 'Bangers', cursive;
+  color: white;
+  text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+  font-size: 20px;
+}
