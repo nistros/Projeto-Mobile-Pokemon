@@ -27,3 +27,16 @@ não peguei o tipo porque era o mais facil, peguei porque eu meio que no grupo e
 A ideia do site no geral é ver os poekmons, suas descrições, poderes, categorias e tipos, além de ter até login. na minha página o objetivo é só buscar os pokemons, mostra a imagem, nome e uma descrição simples.
 
 <img src="./pages/2 Página do Paulo/assets/Captura de tela projeto.png" alt="pagina 2">
+
+ Trabalho Mobile – Parte Rafael – Página 4
+Esse trabalho foi bem interessante de fazer, porém apresentou alguns desafios, como códigos incorretos e outros que eu nem sabia que existiam. Mas, como grupo, nos ajudamos mutuamente e também contamos com um pouco de ajuda da IA.
+O trabalho foi realizado junto com Antony, Vine, Gustavo, Paulo, Jorge e eu, Rafael. A API utilizada foi a PokeAPI — uma API gratuita e aberta para informações sobre todos os Pokémon.
+Agora, uma breve explicação do app:
+O aplicativo consiste em ser uma Pokédex interativa, permitindo pesquisar Pokémon pelo seu nome ou número, visualizando sua imagem, tipo, altura e peso (que é a minha parte), além de obter uma breve descrição.
+
+link do figma: https://www.figma.com/team_invite/redeem/JdpHNsoIYjnj5CMJNIMduN 
+
+Fotos do trabalho
+<img src="pages\4 Páginan do Rafael\assets\printTrabalho.png">
+<img src="pages\4 Páginan do Rafael\assets\printTrabalho1.png">
+<img src="pages\4 Páginan do Rafael\assets\printTrabalho2.png">
