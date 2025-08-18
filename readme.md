@@ -55,4 +55,4 @@ nao posso esqueçer de agradeçer as lendas que mais me ajudaram: Antony, Jorge 
 **Trabalho Mobile e front - Antony - pág 1**
 O código que eu fiz é referente a uma página de login responsiva, com labels para identificar os campos e flexbox para as mais variadas resoluções, consta com a logo do ''pokémon'', e uma funcionalidade que seria de esconder, ou mostrar a navbar quando se está logado ou deslogado, ele salva o login em um local storage suas senhas e usuários.
 
-<img src="pages\4 Páginan do Rafael\assets\printTrabalho2.png"> <img src="./pages/1 Página do Antony/assets/trabai2.png" alt="Pag2">
+<img src="./pages/1 Página do Antony/assets/trabai1.png" alt="Pag2"> <img src="./pages/1 Página do Antony/assets/trabai2.png" alt="Pag2">
