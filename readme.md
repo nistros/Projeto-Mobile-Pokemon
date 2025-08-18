@@ -40,3 +40,14 @@ Fotos do trabalho
 <img src="pages\4 Páginan do Rafael\assets\printTrabalho.png">
 <img src="pages\4 Páginan do Rafael\assets\printTrabalho1.png">
 <img src="pages\4 Páginan do Rafael\assets\printTrabalho2.png">
+
+
+Trabalho Mobile - parte Gustavo - pagina 5
+
+Este código HTML cria uma página completa e responsiva que exibe todos os 18 tipos de Pokémon com suas respectivas vantagens e fraquezas (minha parte) em um layout organizado e visualmente atraente. O objetivo é permitir que jogadores e fãs de Pokémon consultem rapidamente as relações entre os tipos, ajudando em batalhas ou no entendimento do jogo.A página utiliza um sistema de cards para apresentar cada tipo de Pokémon de forma clara e organizada. Cada card contém
+Ícone e Nome do Tipo: Identificado por uma cor de fundo e um símbolo (como 🔥 para Fogo ou 💧 para Água).
+Em resumo a página é uma ferramenta prática e visualmente agradável para quem quer dominar as estratégias de tipos em Pokémon. Seu design limpo, organização intuitiva e navegação fácil a tornam ideal tanto para consultas rápidas quanto para estudos mais aprofundados.
+nao posso esqueçer de agradeçer as lendas que mais me ajudaram: Antony, Jorge e rafael
+
+<img width="631" height="929" alt="image" src="https://github.com/user-attachments/assets/cdb4b622-0467-42d6-b18e-0ee309b6395d" />
+
