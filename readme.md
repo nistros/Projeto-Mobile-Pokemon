@@ -51,3 +51,8 @@ nao posso esqueçer de agradeçer as lendas que mais me ajudaram: Antony, Jorge 
 
 <img width="631" height="929" alt="image" src="https://github.com/user-attachments/assets/cdb4b622-0467-42d6-b18e-0ee309b6395d" />
 
+
+**Trabalho Mobile e front - Antony - pág 1**
+O código que eu fiz é referente a uma página de login responsiva, com labels para identificar os campos e flexbox para as mais variadas resoluções, consta com a logo do ''pokémon'', e uma funcionalidade que seria de esconder, ou mostrar a navbar quando se está logado ou deslogado, ele salva o login em um local storage suas senhas e usuários.
+
+<img src="pages\1 Página do Antony\assets\trabai1.png" alt="Pag1">
